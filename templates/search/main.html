@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+  {% comment %}  {% endcomment %}
+  <div class="wrapper wrapper-engine">
+    <div class="upper">
+      <a href="{% url 'home' %}" class="logo logo__search">
+        <div class="logo__title">LFOV</div>
+        <div class="logo__text" style="text-align: center">limited field of vision</div>
+        {% include 'components/svgsprite.html' %}
+      </a>
+      {% include 'components/searchbar.html' %}
+      <div class="engines"></div>
+    </div>
+    <div class="middle">
+      <div class="cards"></div>
+    </div>
+  </div>
+  
+  <img id="lainCenter" alt="" />
+
+  <script type="module" src="{% static 'search.bundle.js' %}"></script>
+{% endblock %}

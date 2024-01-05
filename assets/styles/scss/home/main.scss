@@ -1,0 +1,41 @@
+.wrapper {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 70px;
+}
+
+.logo {
+    &__title {
+        font-size: 64px;
+        font-family: var(--msapp-fr);
+        line-height: 100%;
+
+        img {height: 54px;}
+    }
+
+    &__text {
+        font-size: 12px;
+        font-family: var(--msapp-fr);
+
+        color: #999;
+    }
+
+    color: #fff;
+}
+
+.center {
+    position: absolute;
+    transform: rotate(-25deg);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    z-index: -1;
+
+    opacity: .3;
+}

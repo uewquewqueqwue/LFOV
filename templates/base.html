@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LFOV</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'lain-cross.ico' %}" />
+  </head>
+
+  <body style="display: none;" >
+    <main>
+      {% block content %}
+
+      {% endblock %}
+    </main>
+  </body>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ google_ip }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ google_ip }}');
+  </script>
+</html>

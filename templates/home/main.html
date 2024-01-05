@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="wrapper">
+  <div class="center">
+    <img id="lainGif" alt="" />
+    <div>
+      Built with <span style="color: #ce817c">❤︎</span> LFOV Copyright 2023
+    </div>
+  </div>
+  <div class="logo">
+    <div class="logo__title">LFOV</div>
+    <div class="logo__text" style="text-align: center">limited field of vision
+    </div>
+  </div>
+  {% include 'components/searchbar.html' %}
+</div>
+
+<script src="{% static 'home.bundle.js' %}"></script>
+<script>library.pageHome()</script>
+{% endblock %}

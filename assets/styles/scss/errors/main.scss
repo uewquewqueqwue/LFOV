@@ -1,0 +1,62 @@
+.pageNF {
+    display: flex;
+    align-items: center;
+
+    &-lain {
+        height: 100vh;
+
+        position: relative;
+        top: 0;
+        right: 0;
+
+        opacity: .5;
+    }
+    
+    &-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+
+        text-align: center;
+    }
+    
+    &-title {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        margin-bottom: 15px;
+
+        font-family: "Roboto";
+
+        span {
+            font-size: 48px;
+        }
+
+        span:first-child {
+            font-size: 128px;
+        }
+    }
+
+    &-subtitle {
+        width: 450px;
+
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+
+        margin-bottom: 50px;
+
+        a {
+            color: #D2738A;
+        }
+    }
+
+    &-under {
+        font-size: 14px;
+    }
+}

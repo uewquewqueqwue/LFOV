@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="pageNF">
+  <img class="pageNF-lain lainThink" src="" alt="">
+  <div class="pageNF-right">
+    <div class="pageNF-title">
+      <span>404</span><span>|</span><span>Page not found</span>
+    </div>
+    <div class="pageNF-subtitle">
+      Oh, you're lost! But don't worry, there's only room here for "whole information network". 
+      Go to <a href="{% url 'home' %}">home</a> page to re-enter the human world.
+    </div>
+    <div class="pageNF-under">别人的声音。 从这个词的记忆中。 你不能告诉任何人。</div>
+  </div>
+</div>
+
+<script src='{% static "home.bundle.js" %}'></script>
+<script>library.pageNotFound()</script>
+{% endblock content %}

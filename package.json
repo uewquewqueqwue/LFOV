@@ -1,0 +1,30 @@
+{
+  "name": "lfov",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --watch --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "Mashiro (uewquewqueqwue)",
+  "license": "ISC",
+  "dependencies": {
+    "alpinejs": "^3.13.3",
+    "file-loader": "^6.2.0",
+    "htmx.org": "^1.9.9",
+    "jquery": "^3.7.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.29",
+    "css-loader": "^6.8.1",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0"
+  }
+}

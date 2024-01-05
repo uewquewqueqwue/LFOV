@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/OpenSans-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: Queensides;
+    src: url(../fonts/Queensides.ttf) format("truetype");
+}
+@font-face {
+    font-family: Queensides-Light;
+    src: url(../fonts/Queensides-Light.ttf) format("truetype");
+}
+
+body {
+  font-family: OpenSans-Regular, sans-serif;
+}

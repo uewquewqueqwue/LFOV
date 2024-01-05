@@ -1,0 +1,23 @@
+{% block searchbar %}
+<div class="search-bar">
+  <div class="search-bar-section">
+    <input id="search" name="request" type="search" value="{{ user_request }}"
+      placeholder="Let's look together" />
+  </div>
+  <div class="informers">
+    <div class="informers-item">
+      <div>Your session IP :</div>
+      <div class="informers-ip" x-data="{ visible: false }"
+        x-bind:style="{ 'min-width': '{{ len_ip }}' + 'px' }"  @click="visible = !visible"
+        @click.away="visible = false">
+        <span
+          x-bind:style="{ 'fontSize': visible ? '16px' : '0', 'background': visible ? 'none' : '#222' }">{{ ip }}</span>
+      </div>
+    </div>
+    <div class="informers-item">
+      <div>Your session region :</div>
+      <div class="informers-region">{{ user_region }}</div>
+    </div>
+  </div>
+</div>
+{% endblock searchbar %}
